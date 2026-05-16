@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Darsh Kanjiya - Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      color: #222;
+      background: #fff;
+    }
+
+    /* NAV */
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 18px 40px;
+      border-bottom: 1px solid #eee;
+      position: sticky;
+      top: 0;
+      background: #fff;
+      z-index: 10;
+    }
+
+    nav h1 {
+      font-size: 1.2rem;
+      font-weight: 600;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 28px;
+    }
+
+    nav ul a {
+      text-decoration: none;
+      color: #555;
+      font-size: 0.95rem;
+    }
+
+    nav ul a:hover {
+      color: #000;
+    }
+
+    /* HERO */
+    .hero {
+      text-align: center;
+      padding: 90px 20px 60px;
+      border-bottom: 1px solid #eee;
+    }
+
+    .hero h2 {
+      font-size: 2.4rem;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      color: #666;
+      font-size: 1.05rem;
+      margin-bottom: 28px;
+    }
+
+    .hero a {
+      background: #222;
+      color: #fff;
+      padding: 11px 28px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-size: 0.95rem;
+    }
+
+    .hero a:hover {
+      background: #444;
+    }
+
+    /* SECTIONS */
+    section {
+      padding: 60px 40px;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    section h3 {
+      font-size: 1.4rem;
+      font-weight: 600;
+      margin-bottom: 24px;
+      border-left: 4px solid #222;
+      padding-left: 12px;
+    }
+
+    /* ABOUT */
+    #about p {
+      color: #555;
+      font-size: 1rem;
+      line-height: 1.8;
+    }
+
+    /* SKILLS */
+    .skills-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .skills-list span {
+      background: #f4f4f4;
+      border: 1px solid #ddd;
+      padding: 8px 18px;
+      border-radius: 20px;
+      font-size: 0.9rem;
+      color: #333;
+    }
+
+    /* PROJECTS */
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 20px;
+    }
+
+    .project-card {
+      border: 1px solid #e0e0e0;
+      border-radius: 8px;
+      padding: 24px;
+      background: #fafafa;
+    }
+
+    .project-card h4 {
+      font-size: 1.05rem;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+
+    .project-card p {
+      font-size: 0.88rem;
+      color: #666;
+      line-height: 1.6;
+    }
+
+    /* CONTACT */
+    #contact p {
+      color: #555;
+      margin-bottom: 16px;
+      font-size: 0.95rem;
+    }
+
+    #contact a {
+      color: #222;
+      text-decoration: underline;
+    }
+
+    /* FOOTER */
+    footer {
+      text-align: center;
+      padding: 24px;
+      font-size: 0.85rem;
+      color: #aaa;
+      border-top: 1px solid #eee;
+    }
+
+    /* DIVIDER */
+    .divider {
+      border: none;
+      border-top: 1px solid #eee;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 600px) {
+      nav { padding: 16px 20px; }
+      nav ul { gap: 16px; }
+      .hero h2 { font-size: 1.8rem; }
+      section { padding: 40px 20px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <h1>Darsh Kanjiya</h1>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <div class="hero">
+    <h2>Hi, I'm Darsh 👋</h2>
+    <p>Web Developer — I build clean and functional websites.</p>
+    <a href="#projects">See My Work</a>
+  </div>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <h3>About Me</h3>
+    <p>
+      I'm Darsh Kanjiya, a web developer from Gujarat, India. I enjoy building projects that solve real problems —
+      from student platforms to result portals and outdoor apps. I'm always learning and looking for opportunities
+      to grow as a developer.
+    </p>
+  </section>
+
+  <hr class="divider" />
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <h3>Skills</h3>
+    <div class="skills-list">
+      <span>HTML</span>
+      <span>CSS</span>
+      <span>JavaScript</span>
+      <span>React</span>
+      <span>Node.js</span>
+      <span>MongoDB</span>
+      <span>Express.js</span>
+      <span>Git & GitHub</span>
+      <span>REST APIs</span>
+      <span>Responsive Design</span>
+    </div>
+  </section>
+
+  <hr class="divider" />
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <h3>Projects</h3>
+    <div class="projects-grid">
+
+      <div class="project-card">
+        <h4>Campus Connect</h4>
+        <p>A platform to connect students within a campus, improving communication between peers and faculty.</p>
+      </div>
+
+      <div class="project-card">
+        <h4>Result Portal</h4>
+        <p>A simple and clean portal for students to view their academic results quickly and easily.</p>
+      </div>
+
+      <div class="project-card">
+        <h4>Trekking Suggestion App</h4>
+        <p>An app that recommends trekking routes and destinations based on user preferences.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <hr class="divider" />
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <h3>Contact</h3>
+    <p>📧 Email: <a href="mailto:knjyadarsh30@gmail.com">knjyadarsh30@gmail.com</a></p>
+    <p>🐙 GitHub: <a href="https://github.com/settings/profile" target="_blank">github.com/darshkanjiya</a></p>
+    <p>💼 LinkedIn: <a href="https://www.linkedin.com/in/darsh-kanjiya-71514531a" target="_blank">linkedin.com/in/darsh-kanjiya</a></p>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>Made by Darsh Kanjiya &copy; 2025</p>
+  </footer>
+
+</body>
+</html>
